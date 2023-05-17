@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(218, 218, 218) ;
+    text-decoration: none;
+    color: #fff;
+}
+
+a{
+text-decoration: none;
+color: #fff;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navBar{
+    background-color: #b4b8ab;
+}
+
+.backgroundColor{
+    background-color: #b4b8ab ;
+}
+
+#img {
+    height: 40px;
+    transition: transform 0.2s;
+  }
