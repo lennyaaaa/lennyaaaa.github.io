@@ -16,7 +16,7 @@ a {
 }
 
 .navBar {
-    background-color: #b4b8ab;
+    background-color: #5c1e01;
 }
 
 .backgroundColor {
@@ -52,4 +52,4 @@ a {
 body {
     background: url("../media/Kendrick-Lamar-at-Glastonbury-2022.jpg") no-repeat center center fixed;
     background-size: cover;
-  }
+}
