@@ -49,4 +49,9 @@ a {
     .bg-text {
       margin-top: 10%; 
     }
-  }
+}
+
+.btnContinue{
+    background-color: #5c1e01;
+    left: 50%;
+}
