@@ -55,3 +55,15 @@ a {
     background-color: #5c1e01;
     left: 50%;
 }
+
+.hide {
+    display: none;
+}
+
+.cardSizing{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    
+}
