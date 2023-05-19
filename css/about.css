@@ -1,6 +1,7 @@
 .navBar {
     background-color: #5c1e01;
-    z-index: 9999; /* Ensure the navbar appears on top of other elements */
+    z-index: 9999;
+    /* Ensure the navbar appears on top of other elements */
 }
 
 .text-box {
@@ -19,7 +20,8 @@ body {
     color: #fff;
     background: url("../media/IGOR.jpg") no-repeat center center fixed;
     background-size: cover;
-    margin-top: 70px; /* Add top margin to push content below the navbar */
+    margin-top: 70px;
+    /* Add top margin to push content below the navbar */
 }
 
 a {
@@ -33,25 +35,28 @@ a {
     width: 80%;
     padding: 10px;
     text-align: center;
-    margin: 100px auto; /* Center the text vertically */
+    margin: 100px auto;
+    /* Center the text vertically */
 }
 
 .myCards {
     color: #EFE6DD;
     font-weight: bold;
     text-align: center;
-    margin: 50px auto; /* Center the cards horizontally */
+    margin: 50px auto;
+    /* Center the cards horizontally */
 }
 
 
 @media (max-width: 576px) {
+
     /* Styles for screens smaller than 576px (e.g., phones) */
     .bg-text {
-      margin-top: 10%; 
+        margin-top: 10%;
     }
 }
 
-.btnContinue{
+.btnContinue {
     background-color: #5c1e01;
     left: 50%;
 }
@@ -60,10 +65,50 @@ a {
     display: none;
 }
 
-.cardSizing{
+.cardSizing {
     width: 100%;
     height: 200px;
     display: flex;
     justify-content: center;
-    
+
+}
+
+.btnGaming {
+    background: url("../media/3b9e5247eb37e6c529161d2a31152cdd--steam-summer-sale-logo-samples.jpg") no-repeat scroll 0 0 transparent;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 360px;
+    padding-bottom: 2px;
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 50px #fff;
+}
+
+.btnMusic {
+    background: url("../media/Spotify_App_Logo.svg") no-repeat scroll 0 0 transparent;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 360px;
+    padding-bottom: 2px;
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 50px #fff;
+}
+
+.btnSeries {
+    background: url("../media/netflix-logo.webp") no-repeat scroll 0 0 transparent;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 360px;
+    padding-bottom: 2px;
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    box-shadow: 0px 0px 50px #fff;
 }
