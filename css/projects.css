@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Quicksand:wght@300&display=swap");
+.navBar {
+    background-color: #5c0401;
+    z-index: 9999;
+  }
 
-html,
-body {
-    background-color: #121212;
-    display: flex;
+  html,
+  body {
+    background-color: #5c0401;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -12,45 +14,43 @@ body {
     font-weight: bold;
     color: #aaa;
     font-family: "Quicksand", serif;
-}
+  }
 
-@media (max-width: 800px) {
-
+  @media (max-width: 800px) {
     html,
     body {
-        font-size: 13px;
+      font-size: 13px;
     }
-}
+  }
 
-@media (max-width: 650px) {
-
+  @media (max-width: 650px) {
     html,
     body {
-        font-size: 10px;
+      font-size: 10px;
     }
-}
+  }
 
-.wrapper {
+  .wrapper {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 7rem 5rem;
     margin: 5rem 0;
-}
+  }
 
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
     .wrapper {
-        grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
-}
+  }
 
-@media (min-width: 1300px) {
+  @media (min-width: 1300px) {
     .wrapper {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-}
+  }
 
-.box {
+  .box {
     --box-width: 20rem;
     --box-height: 30rem;
     --frag-width: calc(var(--box-width) / var(--col));
@@ -62,9 +62,9 @@ body {
     width: var(--box-width);
     height: var(--box-height);
     position: relative;
-}
+  }
 
-.box2 {
+  .box2 {
     --box-width: 20rem;
     --box-height: 30rem;
     --frag-width: calc(var(--box-width) / var(--col));
@@ -76,9 +76,9 @@ body {
     width: var(--box-width);
     height: var(--box-height);
     position: relative;
-}
+  }
 
-.box3 {
+  .box3 {
     --box-width: 20rem;
     --box-height: 30rem;
     --frag-width: calc(var(--box-width) / var(--col));
@@ -90,18 +90,16 @@ body {
     width: var(--box-width);
     height: var(--box-height);
     position: relative;
-}
+  }
 
-
-
-.box::before {
+  .box::before {
     content: attr(data-title);
     position: absolute;
     top: calc(100% + 1.5rem);
     font-size: 1.7rem;
-}
+  }
 
-.box::after {
+  .box::after {
     content: "CLICK ME";
     position: absolute;
     width: 100%;
@@ -112,30 +110,25 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     color: #aaa;
-
-    background-image: repeating-linear-gradient(-45deg,
-            rgba(100, 100, 100, 0.25),
-            rgba(100, 100, 100, 0.25) 1px,
-            transparent 1px,
-            transparent 6px);
+    background-image: repeating-linear-gradient(-45deg, rgba(100, 100, 100, 0.25), rgba(100, 100, 100, 0.25) 1px, transparent 1px, transparent 6px);
     background-size: 4px 4px;
     transition: all 0.2s;
-}
+  }
 
-.box.hide::after {
+  .box.hide::after {
     opacity: 0;
-}
+  }
 
-.box.hide:hover::after {
+  .box.hide:hover::after {
     opacity: 0;
-}
+  }
 
-.box:hover::after {
+  .box:hover::after {
     background-image: initial;
     font-size: 1.8rem;
-}
+  }
 
-.fragment {
+  .fragment {
     --x-offset: calc(var(--x) * var(--frag-width) * -1);
     --y-offset: calc(var(--y) * var(--frag-height) * -1);
     --rotateX: rotateX(0);
@@ -148,26 +141,26 @@ body {
     transform: var(--rotateX) var(--rotateY) scale(0.8);
     animation: flip var(--duration) linear var(--delay) forwards;
     opacity: 0;
-}
+  }
 
-@keyframes flip {
+  @keyframes flip {
     0% {
-        transform: var(--rotateX) var(--rotateY) scale(0.8);
-        opacity: 0;
+      transform: var(--rotateX) var(--rotateY) scale(0.8);
+      opacity: 0;
     }
 
     15% {
-        transform: var(--rotateX) var(--rotateY) scale(0.8);
-        opacity: 0;
+      transform: var(--rotateX) var(--rotateY) scale(0.8);
+      opacity: 0;
     }
 
     70% {
-        transform: rotateX(0) rotateY(0) scale(0.8);
-        opacity: 1;
+      transform: rotateX(0) rotateY(0) scale(0.8);
+      opacity: 1;
     }
 
     100% {
-        transform: rotateX(0) rotateY(0) scale(1);
-        opacity: 1;
+      transform: rotateX(0) rotateY(0) scale(1);
+      opacity: 1;
     }
-}
+  }
