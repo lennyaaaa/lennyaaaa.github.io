@@ -15,21 +15,70 @@
 
 <body>
     <header>
-
+        <nav class="navbar navbar-expand-sm navbar-light navBar">
+            <div class="container">
+                <a class="navbar-brand text-white nav-bar-item" href="#">Lenny</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <button class="nav-link text-white nav-bar-item nav-home" href="">Home</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-white nav-bar-item nav-about" href="">About</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-white nav-bar-item nav-contact"
+                                href="/pages/contact.html">Contact</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-white nav-bar-item nav-projects"
+                                href="/pages/projects.html">Projects</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <a href="/pages/home.html">
+        <div class="container home-section">
+            <div class="row">
+                <div class="col-md my-5 py-5">
+                    <h1>
+                        My name is Lenny
+                    </h1>
+                    <p>
+                        I am a web developer
+                        <br>
+                        Please take a look around my website, have fun!
+                    </p>
 
-            <div class="text-box">
-    
-                <span>B</span>
-                <span>U</span>
-                <span>S</span>
-                <span>S</span>
-        </a>
+                </div>
+                <div class="col-md">
+                    <img class="gojoImg" src="./media/Satoru_Gojo_29.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container about-section py-5">
+            <div class="row about-me">
+                <div class="col-md">
+                    <h1>
+                        About me
+                    </h1>
+                    <p>
+                        I'm 17 years old
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-
+        <a href=""><img class="w-100 svgImg" src="./media/discord-icon-svgrepo-com.svg" alt=""></a>
     </footer>
 
     <script src="/js/main.js"></script>
