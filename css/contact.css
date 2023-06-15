@@ -26,4 +26,28 @@ body {
     filter: drop-shadow(0 0 1.5rem rgb(245, 244, 240));
 }
 
+.inputTopic {
+    width: 25%;
+    height: 160%;
+    border-radius: 15px;
+}
 
+.inputQuestion {
+    width: 60%;
+    height: 800%;
+    border-radius: 15px;
+}
+
+.inputEmail {
+    width: 60%;
+    height: 160%;
+    border-radius: 15px;
+}
+
+.submitBtn {
+    width: 20%;
+    height: 140%;
+    background-color: #a73d3d;
+    border: none;
+    border-radius: 15px;
+}
