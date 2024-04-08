@@ -44,13 +44,13 @@ function handleCategoryInput(event) {
 function handleCategory(category) {
     switch (category) {
         case "contact":
-            window.location.href = "contact.html";
+            window.location.href = "/pages/contact.html";
             break;
         case "projects":
-            window.location.href = "projects.html";
+            window.location.href = "/pages/projects.html";
             break;
         case "about me":
-            window.location.href = "about.html";
+            window.location.href = "/pages/about.html";
             break;
         default:
             displayErrorMessage(category);
