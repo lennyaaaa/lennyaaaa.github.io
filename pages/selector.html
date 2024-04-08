@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Selector</title>
+    <link rel="stylesheet" href="/style/style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="terminal-wrapper">
+        <div class="terminal">
+            <div class="terminal-header">
+                <!-- Back button -->
+                <a href="index.html"><span class="terminal-button red"></span></a>
+                <a href="index.html"><span class="terminal-button yellow"></span></a>
+                <a href="index.html"><span class="terminal-button green"></span></a>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-prompt">user@portfolio:~$</div>
+                <div class="command-output">What would you like to see? Contact, Projects, About Me</div>
+                <div class="terminal-input">Type below: <input type="text" id="userInput" onkeydown="handleCategoryInput(event)"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
